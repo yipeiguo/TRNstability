@@ -4,10 +4,9 @@ close all;
 clear variables;
 
 %% load data
-pathname = './ClusterData/';
 fn = 'EigScaling_randomDAG_phidist1_rho0pt01_n1_Nmin100_Nmax1000_fcmin2_fcmax2_numtrials10_run1';
 
-load(strcat(pathname,fn));
+load(strcat(fn));
 
 %% Plot variation with N
 if length(Nscan)> 1
